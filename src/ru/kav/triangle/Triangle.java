@@ -42,4 +42,12 @@ public class Triangle {
         }
         return false;
     }
+
+    public boolean isRightTriangle(){//прямоугольный
+        if ((a*a+b*b==c*c)||(a*a+c*c==b*b)||(b*b+c*c==a*a)) {
+            System.out.println("Треугольник прямоугольный");
+            return true;
+        }
+        return true;
+    }
 }

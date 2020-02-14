@@ -11,11 +11,11 @@ public class Main {
             triangle.isScalene();
             triangle.isIsosceles();
             triangle.isEquilateral();
+            triangle.isRightTriangle();
         } catch (IncorrectTriangle e) {
             System.out.println("Треугольник есть треугольник! Это не треугольник!");
         } catch (InputMismatchException e){
             System.out.println("Неверные данные");
         }
-
     }
 }

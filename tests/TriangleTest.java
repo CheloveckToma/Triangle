@@ -37,6 +37,8 @@ public class TriangleTest {
         assertTrue(triangle.isEquilateral());
     }
 
+
+
     @Test
     public void isFalseEquilateral() throws IncorrectTriangle {
         Triangle triangle = new Triangle(5, 1, 5);
@@ -55,4 +57,12 @@ public class TriangleTest {
         assertFalse(triangle.isScalene());
     }
 
+
+    @Test
+    public void isRightTriangle() throws IncorrectTriangle {
+        Triangle triangleOne = new Triangle(7, 24, 25);
+        assertTrue(triangleOne.isRightTriangle());
+        Triangle triangleTwo = new Triangle(4, 3, 5);
+        assertTrue(triangleTwo.isRightTriangle());
+    }
 }
